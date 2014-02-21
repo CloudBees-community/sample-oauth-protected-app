@@ -1,0 +1,23 @@
+# IntelliJ project files 
+*.iml
+*.ipr
+*.iws
+.idea
+
+# eclipse project file
+.settings
+.classpath
+.project
+
+.DS_Store
+
+#Ignore all dot files
+.*
+
+#except .gitignore
+!.gitignore
+**/target/*
+*~
+
+#Ignore h2 db
+work.h2.db
