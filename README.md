@@ -3,6 +3,10 @@
 This is a sample OAuth protected app. This is to demonstrate how you can go about developing an app and securing it with
 CloudBees OAuth service.
 
+This app also enables CORS and HSTS with simple Guice configuration.
+
+OAuth, CORS and HSTS support comes from [Cloud Resource Commons Auth library](https://github.com/CloudBees-community/cloud-resource-commons/tree/master/jaxrs-auth).
+
 
 ## Steps to Run
 
@@ -32,7 +36,7 @@ must change the scope value inside @Secure annotation as well.
 
 This will start app at http://localhost:9090
 
-    $ mvn jetty:run
+    $ mvn jetty:run -Dlocal=true
 
 ## Test
 
