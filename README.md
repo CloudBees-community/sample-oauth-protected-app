@@ -30,7 +30,13 @@ OAUTH_APP_CLIENT_ID and OAUTH_APP_CLIENT_SECRET in the web.xml by the respective
 Here https://myapp.example.com/read_account_info is globally unique so you must register a different scope URL. You
 must change the scope value inside @Secure annotation as well.
 
-    $ bees oauth:app:register --account CLOUDBEES_ACCOUNT_NAME --grant-type client_credentials --url https://localhost/testapp -n "Protected Test App" --callback https://localhost/testapp/callback -S https://myprotectedapp.example.com/account_info="Allow to get account info"
+    $ bees oauth:app:register \
+        --account CLOUDBEES_ACCOUNT_NAME \
+        --grant-type client_credentials \
+        --url https://localhost/testapp \
+        -n "Protected Test App" \
+        --callback https://localhost/testapp/callback \
+        -S https://myprotectedapp.example.com/account_info="Allow to get account info"
 
 ### Start App
 
